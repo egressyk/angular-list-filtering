@@ -1,0 +1,12 @@
+<h1>Filter & Search</h1>
+
+<select [formControl]="selectData">
+  <option value="">All</option>
+  <option value="foo">Foo</option>
+  <option value="bar">Bar</option>
+</select>
+<input [formControl]="searchData" placeholder="input">
+
+<div *ngFor="let element of list | multiFilter: [selectFilter, searchFilter]">
+  {{ element.name }}
+</div>
