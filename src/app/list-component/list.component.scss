@@ -1,0 +1,17 @@
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+input,
+select {
+  border: none;
+  border-bottom: 1px solid;
+  margin-right: 10px;
+  &:focus {
+    outline: none;
+  }
+} 
+
+form {
+  margin-bottom: 20px;
+}

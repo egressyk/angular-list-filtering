@@ -6,7 +6,7 @@ import { FormControl } from '@angular/forms';
 @Component({
   selector: 'list',
   templateUrl: './list.component.html',
-  styles: [`h1 { font-family: Lato; }`]
+  styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit  {
   selectData = new FormControl('');
@@ -67,8 +67,10 @@ export class ListComponent implements OnInit  {
   list = [
     {name: 'foo'},
     {name: 'bar'},
-    {name: 'foo something'},
-    {name: 'bar something'},
+    {name: 'foo bar'},
+    {name: 'bar foo'},
+    {name: 'foo cica'},
+    {name: 'bar kutya'},
   ]
   
   
